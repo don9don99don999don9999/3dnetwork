@@ -42,3 +42,11 @@ color 갯수는? 모르겠음.
 #### 번호부여 코드 만들어야함.
 #### Fix nodes after dragging (source)
 로 바꿀예정.
+
+
+ onNodeDragEnd={node => {
+          node.fx = node.x;
+          node.fy = node.y;
+          node.fz = node.z;
+        }}
+        추가하면 공간상 끌어놓는것 
